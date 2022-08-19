@@ -1,1 +1,3 @@
 # Project_3
+In this Project, we will be developing various portfolios and trading algorithms for those portfolios and then set it as an option for the user to pick and chose using django.
+The project will be use a few new things such as monti carlo and more to determine returns and try to establish a perfect volatility/return aspect. In terms of Efficent Market Hypothesis and Random Walk Hypothesis thye suggest that we wouldnt be able to calculate future growth or potential earning but we can use scipy and monti to determine possible ways to invest in portfolios to get maximum growth and set up trade alogrithms buy sell or hold various portfolios that were developed. 
