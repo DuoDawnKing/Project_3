@@ -25,3 +25,7 @@ For the functioning of the portfolio trading, we would use quantconnect, which w
 
 
 ![rsearch stock](https://user-images.githubusercontent.com/100724428/185540520-a1e8b99c-472b-44b2-a2ba-11764939d031.PNG)
+
+![research stock](https://user-images.githubusercontent.com/100724428/185540643-610b0c2a-7eca-46bb-b639-d6229084737d.PNG)
+
+
