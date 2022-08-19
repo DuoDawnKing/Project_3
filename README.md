@@ -14,3 +14,5 @@ Retirement 1 stock had MCD,PG,PEP,MET,CVX as stocks, 4 of which were beta meanin
 The algoirthms would have stayed in the the user folder in django, so that they could live watch the changes in the project and more.
 
 Part of the project was to get a robo advisor to function properly, which would of been used as the one to do QA for the recommended portfolio
+
+For the functioning of the portfolio trading, we would use quantconnect, which would been used to display the various portfolio using live info and if the individual had some income then they would be able to post it live and use it for future purchase or investment
