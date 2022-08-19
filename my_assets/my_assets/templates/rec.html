@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block content%}
+<div class="box">
+<h1 class="container text-center"> "Generated Recommend Asset:" <h1>
+<hr class="my-4">
+<p class="text-center"> This page will auto generate recommended assets based on what your input.</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="input-group mb-3">
+  <label class="input-group-text" for="inputGroupSelect01">Type of Portfolio/ETF</label>
+  <select class="form-select" id="inputGroupSelect01">
+    <option selected></option>
+    <option value="1">Stock</option>
+    <option value="2">Mutual Fund</option>
+    <option value="3">Real Estate</option>
+    <option value="3">Commodities</option>
+    <option value="3">Gold</option>
+    <option value="3">Technology</option>
+    
+  </select>
+</div>
+
+<h2 class="container text-center">Investment Amount:</h2>
+<div class="input-group mb-3">
+  <span class="input-group-text">$</span>
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+  <span class="input-group-text">.00</span>
+</div>
+<br>
+<br>
+<br>
+<h2 class="container text-center">Return Rate:</h2>
+<select class="form-select" aria-label="Default select example">
+  <option selected>Select </option>
+  <option value="1">High Return Rate</option>
+  <option value="2">Moderate Return Rate</option>
+  <option value="2">Low Return Rate</option>
+
+</select>
+    
+  <div class="d-grid gap-2">
+  <button class="btn btn-primary" type="button">Generate</button>
+  </div>
+</div>
+
+</div> 
+{% endblock %} 
+
+  
+
+
+        
+
+

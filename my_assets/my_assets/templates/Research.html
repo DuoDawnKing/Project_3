@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content%}
+
+<h1 class="container text-center">Research Stock or ETF info:</h1>
+<form action = "{% url 'Research' %}" class="d-flex" method="POST">
+      	{% csrf_token %}
+        <input class="form-control me-2" type="search" placeholder="Research Stock/ETF" aria-label="Search" 
+        name="ticker">
+        <button class="btn btn-outline-dark" type="submit">Search Asset</button>
+      </form>
+<br/>
+<div>
+
+{% if api %}
+        {% if api == "Error, incorrect" %}
+                The ticker or ETF symbol did not match,
+                Please input the correct ETF or ticker symbol
+        {% else %}
+                <h1 class="container text-center">{{ api.companyName}}</h1><br/>
+                <ul class="list-group">
+                  <li class="list-group-item">{{ api.companyName}} | Symbol: {{ api.symbol }}</li> 
+                  <li class="list-group-item">Symbol: {{ api.symbol }}</li>
+                  <li class="list-group-item">Price: {{ api.latestPrice}}</li>
+                  <li class="list-group-item">Daily Open: {{ api.open }}</li>
+                  <li class="list-group-item">Previous Close:{{ api.previousClose }}</li>
+                  <li class="list-group-item">PE Ratio:{{ api.peRatio }}</li>
+                  <li class="list-group-item">Year to Date Return: {{ api.ytdChange }}</li>
+                  <li class="list-group-item">52WK High: {{ api.week52High }}</li>
+                  <li class="list-group-item">52Wk Low: {{ api.week52Low }}</li>
+                </ul>
+
+        {% endif %}
+{% endif %}
+
+
+
+</div>
+
+  
+
+
+        
+
+
+{% endblock %}
